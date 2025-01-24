@@ -48,6 +48,11 @@
   resolved "https://registry.npmmirror.com/@cloudflare/workerd-windows-64/-/workerd-windows-64-1.20241230.0.tgz#22a5b694f01dfa92f66f6af84a12eb9f90aa5e66"
   integrity sha512-y5SPIk9iOb2gz+yWtHxoeMnjPnkYQswiCJ480oHC6zexnJLlKTpcmBCjDH1nWCT4pQi8F25gaH8thgElf4NvXQ==
 
+"@cloudflare/workers-types@4.20240614.0":
+  version "4.20240614.0"
+  resolved "https://registry.npmmirror.com/@cloudflare/workers-types/-/workers-types-4.20240614.0.tgz#d8145a32c287ce9b60bc98db324248727b2b0761"
+  integrity sha512-fnV3uXD1Hpq5EWnY7XYb+smPcjzIoUFiZpTSV/Tk8qKL3H+w6IqcngZwXQBZ/2U/DwYkDilXHW3FfPhnyD7FZA==
+
 "@cloudflare/workers-types@^4.20250121.0":
   version "4.20250121.0"
   resolved "https://registry.npmmirror.com/@cloudflare/workers-types/-/workers-types-4.20250121.0.tgz#7a535deba310ee68c70b424b0f75a1069c70741c"
@@ -320,6 +325,62 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
+
+"@prisma/adapter-d1@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/adapter-d1/-/adapter-d1-6.2.1.tgz#d99aa8641d53d9e505aabe7a616097741c30532d"
+  integrity sha512-/ocyihCyELX9kF7k0otGQCD4E9ltEuyxGhzQmpQwJRLa9cp2TgbMrjWNiBllGa4OSVxiYMKVANYZAEaUqGlUJQ==
+  dependencies:
+    "@cloudflare/workers-types" "4.20240614.0"
+    "@prisma/driver-adapter-utils" "6.2.1"
+
+"@prisma/client@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/client/-/client-6.2.1.tgz#3d7d0c8669bba490247e1ffff67b93a516bd789f"
+  integrity sha512-msKY2iRLISN8t5X0Tj7hU0UWet1u0KuxSPHWuf3IRkB4J95mCvGpyQBfQ6ufcmvKNOMQSq90O2iUmJEN2e5fiA==
+
+"@prisma/debug@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/debug/-/debug-6.2.1.tgz#887719967c4942d125262e48f6c47c45d17c1f61"
+  integrity sha512-0KItvt39CmQxWkEw6oW+RQMD6RZ43SJWgEUnzxN8VC9ixMysa7MzZCZf22LCK5DSooiLNf8vM3LHZm/I/Ni7bQ==
+
+"@prisma/driver-adapter-utils@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/driver-adapter-utils/-/driver-adapter-utils-6.2.1.tgz#3c0524681822dfd407c7472840c3c8866f4c5888"
+  integrity sha512-Bx0z0jHekcokfckg2R0y9HO4F0LMrvTs8xgSoNpbnA5wtc83VwsaLrQFlZ7AKupAGIUpd+9X+MmNQQ0ES/7Vhw==
+  dependencies:
+    "@prisma/debug" "6.2.1"
+
+"@prisma/engines-version@6.2.0-14.4123509d24aa4dede1e864b46351bf2790323b69":
+  version "6.2.0-14.4123509d24aa4dede1e864b46351bf2790323b69"
+  resolved "https://registry.npmmirror.com/@prisma/engines-version/-/engines-version-6.2.0-14.4123509d24aa4dede1e864b46351bf2790323b69.tgz#b84ce3fab44bfa13a22669da02752330b61745b2"
+  integrity sha512-7tw1qs/9GWSX6qbZs4He09TOTg1ff3gYsB3ubaVNN0Pp1zLm9NC5C5MZShtkz7TyQjx7blhpknB7HwEhlG+PrQ==
+
+"@prisma/engines@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/engines/-/engines-6.2.1.tgz#14ef56bb780f02871a728667161d997a14aedb69"
+  integrity sha512-lTBNLJBCxVT9iP5I7Mn6GlwqAxTpS5qMERrhebkUhtXpGVkBNd/jHnNJBZQW4kGDCKaQg/r2vlJYkzOHnAb7ZQ==
+  dependencies:
+    "@prisma/debug" "6.2.1"
+    "@prisma/engines-version" "6.2.0-14.4123509d24aa4dede1e864b46351bf2790323b69"
+    "@prisma/fetch-engine" "6.2.1"
+    "@prisma/get-platform" "6.2.1"
+
+"@prisma/fetch-engine@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/fetch-engine/-/fetch-engine-6.2.1.tgz#cd7eb7428a407105e0f3761dba536aefd41fc7f7"
+  integrity sha512-OO7O9d6Mrx2F9i+Gu1LW+DGXXyUFkP7OE5aj9iBfA/2jjDXEJjqa9X0ZmM9NZNo8Uo7ql6zKm6yjDcbAcRrw1A==
+  dependencies:
+    "@prisma/debug" "6.2.1"
+    "@prisma/engines-version" "6.2.0-14.4123509d24aa4dede1e864b46351bf2790323b69"
+    "@prisma/get-platform" "6.2.1"
+
+"@prisma/get-platform@6.2.1":
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/@prisma/get-platform/-/get-platform-6.2.1.tgz#34313cd0ee3587798ad33a7b57b6342dc8e66426"
+  integrity sha512-zp53yvroPl5m5/gXYLz7tGCNG33bhG+JYCm74ohxOq1pPnrL47VQYFfF3RbTZ7TzGWCrR3EtoiYMywUBw7UK6Q==
+  dependencies:
+    "@prisma/debug" "6.2.1"
 
 "@rollup/rollup-android-arm-eabi@4.31.0":
   version "4.31.0"
@@ -700,7 +761,7 @@ expect-type@^1.1.0:
   resolved "https://registry.npmmirror.com/expect-type/-/expect-type-1.1.0.tgz#a146e414250d13dfc49eafcfd1344a4060fa4c75"
   integrity sha512-bFi65yM+xZgk+u/KRIpekdSYkTB5W1pEf0Lt8Q8Msh7b+eQ7LXVtIB1Bkm4fvclDEL1b2CZkMhv2mOeF8tMdkA==
 
-fsevents@~2.3.2, fsevents@~2.3.3:
+fsevents@2.3.3, fsevents@~2.3.2, fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.npmmirror.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
@@ -730,7 +791,7 @@ hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hono@4.6.18:
+hono@^4.6.18:
   version "4.6.18"
   resolved "https://registry.npmmirror.com/hono/-/hono-4.6.18.tgz#18fdc3cfe1540c5aa286a94b2ed5a66fce87241b"
   integrity sha512-Fu7hEPvdwtPG8LqSAiPn8p8HjD+PDxrP/HVnwRBnwtVKOn5zDDKsw0ma2Xt58oq97Rlp3t/mRNADEV/Ym6cDng==
@@ -894,6 +955,15 @@ printable-characters@^1.0.42:
   version "1.0.42"
   resolved "https://registry.npmmirror.com/printable-characters/-/printable-characters-1.0.42.tgz#3f18e977a9bd8eb37fcc4ff5659d7be90868b3d8"
   integrity sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==
+
+prisma@^6.2.1:
+  version "6.2.1"
+  resolved "https://registry.npmmirror.com/prisma/-/prisma-6.2.1.tgz#457b210326d66d0e6f583cc6f9cd2819b984408f"
+  integrity sha512-hhyM0H13pQleQ+br4CkzGizS5I0oInoeTw3JfLw1BRZduBSQxPILlJLwi+46wZzj9Je7ndyQEMGw/n5cN2fknA==
+  dependencies:
+    "@prisma/engines" "6.2.1"
+  optionalDependencies:
+    fsevents "2.3.3"
 
 readdirp@^4.0.1:
   version "4.1.1"

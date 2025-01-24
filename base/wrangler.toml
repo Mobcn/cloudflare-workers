@@ -1,0 +1,22 @@
+# 项目名
+name = "base"
+# 入口函数
+main = "src/index.ts"
+# 构建日期
+compatibility_date = "2025-01-24"
+
+# 代码变动监听
+[observability]
+enabled = true
+# head_sampling_rate = 1
+
+# R2对象存储
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "bucket"
+
+# D1数据库
+[[d1_databases]]
+binding = "DB"
+database_name = "demo"
+database_id = "11469275-bfcc-4423-88da-fd43c93d30f0"
